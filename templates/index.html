@@ -1,0 +1,421 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-primary mb-4">Safe & Faster</h1>
+            <h1 class="text-white display-3 mb-5">Stock Services</h1>
+            <div class="mx-auto" style="width: 100%; max-width: 600px;">
+                <div class="input-group">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid w-100" src="{% static 'img/about1.webp' %}" alt="">
+                    <div class="bg-primary text-dark text-center p-4">
+                        <h3 class="m-0">25+ Years Experience</h3>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-primary text-uppercase font-weight-bold">About Us</h6>
+                    <h1 class="mb-4">Trusted & Faster Prediction Service Provider</h1>
+                    <p class="mb-4">A stock exchange is the meeting place for buyers and sellers for trade. In India, the prime stock exchanges are the National Stock Exchange and the Bombay Stock Exchange.</p>
+                    <div class="d-flex align-items-center pt-2">
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/A7fZp9dwELo" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-bold m-0 ml-4">Play Video</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>        
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!--  Quote Request Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
+                    <h1 class="mb-4">Request A Free Quote</h1>
+                    <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">225</h1>
+                            <h6 class="font-weight-bold mb-4">SKilled Experts</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">1050</h1>
+                            <h6 class="font-weight-bold mb-4">Happy Clients</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">2500</h1>
+                            <h6 class="font-weight-bold mb-4">Complete Projects</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <form class="py-5">
+                            <div class="form-group">
+                                <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <select class="custom-select border-0 px-4" style="height: 47px;">
+                                    <option selected>Select A Service</option>
+                                    <option value="1">Service 1</option>
+                                    <option value="2">Service 1</option>
+                                    <option value="3">Service 1</option>
+                                </select>
+                            </div>
+                            <div>
+                                <button class="btn btn-dark btn-block border-0 py-3" type="submit">Get A Quote</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote Request Start -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Services</h6>
+                <h1 class="mb-4">Best Stock Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-store text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Equity market</h6>
+                    </div>
+                    <p>Equity market, often called as stock market or share market, is a place where shares of companies or entities are traded.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.nirmalbang.com/knowledge-center/all-about-equity-market.html#:~:text=Equity%20market%2C%20often%20called%20as,counter%20or%20at%20stock%20exchanges.">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fad fa-2x fa-analytics text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Mutual Funds</h6>
+                    </div>
+                    <p>A mutual fund is a company that pools money from many investors and invests the money in securities such as stocks, bonds, and short-term debt.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1#:~:text=What%20are%20mutual%20funds%3F,buy%20shares%20in%20mutual%20funds.">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fas fa-2x fa-dollar-sign text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Currency Derivatives</h6>
+                    </div>
+                    <p>Forex, being the worlds largest and the fastest growing industry in the fields of financial services, is now available at Suresh Rathi.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.indiamart.com/nice-investment/share-market-services.html#9907845697">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fas fa-2x fa-sack-dollar text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Commodity</h6>
+                    </div>
+                    <p>Commodities actually offer immense potential to become a separate asset class for market-savvy investors, arbitrageurs and speculators.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.indiamart.com/nice-investment/share-market-services.html#9907831588">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!-- Features Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid w-100" src="{% static 'img/stock9.jpg' %}" alt="">
+                </div>
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Why Choose Us</h6>
+                    <h1 class="mb-4">Faster, Safe and Trusted Logistics Services</h1>
+                    <p class="mb-4">We provide accurate prediction result regarding the rise and fall of stock market companies. We guide you to take appropriate decisions.</p>
+                    <ul class="list-inline">
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Best In Industry</h6>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>Emergency Services</h6></li>
+                        <li><h6><i class="far fa-dot-circle text-primary mr-3"></i>24/7 Customer Support</h6></li>
+                    </ul>
+                    <a href="" class="btn btn-primary mt-3 py-2 px-4">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Pricing Plan Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Top companies</h6>
+                <h1 class="mb-4">List of popular companies</h1>
+            </div>
+            <div class="row">
+                {% for i in c %}
+                <div class="col-md-4 mb-5">
+                    <div class="bg-secondary">
+                        <div class="text-center p-4">
+                            <img src="{{i.cimg.url}}" class="img-fluid img-thumbnail">
+                        </div>
+                        <div class="bg-primary text-center p-4">
+                            <h3 class="m-0">{{i.cname}}</h3>
+                        </div>
+                        <div class="d-flex flex-column align-items-center py-4">
+                            <p>{{i.cdesc}}</p>
+                            
+                            <a href="" class="btn btn-primary py-2 px-4 my-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">ExpertTeam</h6>
+                <h1 class="mb-4">Meet Our Expert Team</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="{% static 'img/team-1.jpg' %}" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="{% static 'img/team-2.jpg' %}" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="{% static 'img/team-3.jpg' %}" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team card position-relative overflow-hidden border-0 mb-5">
+                        <img class="card-img-top" src="{% static 'img/team-4.jpg' %}" alt="">
+                        <div class="card-body text-center p-0">
+                            <div class="team-text d-flex flex-column justify-content-center bg-secondary">
+                                <h5 class="font-weight-bold">Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social d-flex align-items-center justify-content-center bg-primary">
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-dark btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-dark btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Testimonial</h6>
+                <h1 class="mb-4">Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Jim Rogers</h6>
+                            <small>- Journalist</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Bottoms in the investment world don't end with four-year lows; they end with 10- or 15-year lows.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Warren Buffett</h6>
+                            <small>- Philosopher</small>
+                        </div>
+                    </div>
+                    <p class="m-0">I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Carlos Slim Helu</h6>
+                            <small>- Entrepreneur</small>
+                        </div>
+                    </div>
+                    <p class="m-0">With a good perspective on history, we can have a better understanding of the past and present, and thus a clear vision of the future.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Jeff Bezos</h6>
+                            <small>- Researcher</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Given a 10% chance of a 100 times payoff, you should take that bet every time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Blog</h6>
+                <h1 class="mb-4">Latest From Blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'img/rk.webp' %}" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">23</h4>
+                            <small class="text-white text-uppercase">Jul</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="{% static 'img/user.jpg' %}" alt="">
+                                <a class="text-muted ml-2" href="">Raamdeo Agrawal</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Stock Market</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Rakesh Jhunjhunwala: The Bull of all seasons</h4>
+                        <p>One of the best things about him was that he wanted people, his friends, and the masses at large, to make money, writes Raamdeo Agrawal of Motilal Oswal Financial Services.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <div class="position-relative">
+                        <img class="img-fluid w-100" src="{% static 'img/nse.webp' %}" alt="">
+                        <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                            style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                            <h4 class="font-weight-bold mb-n1">01</h4>
+                            <small class="text-white text-uppercase">Aug</small>
+                        </div>
+                    </div>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="d-flex mb-3">
+                            <div class="d-flex align-items-center">
+                                <img class="rounded-circle" style="width: 40px; height: 40px;" src="{% static 'img/user1.jpg' %}" alt="">
+                                <a class="text-muted ml-2" href="">Sundar Sethuraman</a>
+                            </div>
+                            <div class="d-flex align-items-center ml-4">
+                                <i class="far fa-bookmark text-primary"></i>
+                                <a class="text-muted ml-2" href="">Nifty</a>
+                            </div>
+                        </div>
+                        <h4 class="font-weight-bold mb-3">Nifty gains in 7 of last 8 weeks dust off recession fears, for now</h4>
+                        <p>The benchmark Nifty50 logged gains on all four days of the truncated week to cap its seventh weekly advance in eight weeks.</p>
+                        <a class="border-bottom border-primary text-uppercase text-decoration-none" href="">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    {% endblock %}

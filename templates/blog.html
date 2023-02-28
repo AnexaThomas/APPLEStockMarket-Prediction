@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Latest News</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="{% url 'home' %}">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Blog</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Blog Start -->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Blog Grid Start -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="{% static 'img/rk.webp' %}" alt="">
+                            <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                                style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                                <h4 class="font-weight-bold mb-n1">23</h4>
+                                <small class="text-white text-uppercase">Jul</small>
+                            </div>
+                        </div>
+                        <div class="bg-secondary mb-3" style="padding: 30px;">
+                            <div class="d-flex mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" style="width: 40px; height: 40px;" src="{% static 'img/user.jpg' %}" alt="">
+                                    <a class="text-muted ml-2" href="">Raamdeo Agrawal</a>
+                                </div>
+                                <div class="d-flex align-items-center ml-4">
+                                    <i class="far fa-bookmark text-primary"></i>
+                                    <a class="text-muted ml-2" href="">Market</a>
+                                </div>
+                            </div>
+                            <h4 class="font-weight-bold mb-3">Rakesh Jhunjhunwala: The Bull of all seasons</h4>
+                            <p>One of the best things about him was that he wanted people, his friends, and the masses at large, to make money, writes Raamdeo Agrawal of Motilal Oswal Financial Services.</p>
+                            <a class="border-bottom border-primary text-uppercase text-decoration-none" href="https://www.business-standard.com/article/markets/rakesh-jhunjhunwala-the-bull-of-all-seasons-122081400365_1.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="{% static 'img/nse.webp' %}" alt="">
+                            <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                                style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                                <h4 class="font-weight-bold mb-n1">01</h4>
+                                <small class="text-white text-uppercase">Aug</small>
+                            </div>
+                        </div>
+                        <div class="bg-secondary mb-3" style="padding: 30px;">
+                            <div class="d-flex mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" style="width: 40px; height: 40px;" src="{% static 'img/user1.jpg' %}" alt="">
+                                    <a class="text-muted ml-2" href="">Sundar Sethuraman </a>
+                                </div>
+                                <div class="d-flex align-items-center ml-4">
+                                    <i class="far fa-bookmark text-primary"></i>
+                                    <a class="text-muted ml-2" href="">Nifty</a>
+                                </div>
+                            </div>
+                            <h4 class="font-weight-bold mb-3">Nifty gains in 7 of last 8 weeks dust off recession fears, for now</h4>
+                            <p>The benchmark Nifty50 logged gains on all four days of the truncated week to cap its seventh weekly advance in eight weeks.</p>
+                            <a class="border-bottom border-primary text-uppercase text-decoration-none" href="https://www.business-standard.com/article/markets/nifty-gains-in-7-of-last-8-weeks-dust-off-recession-fears-indices-up-16-122081201094_1.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100" src="{% static 'img/tata.webp' %}" alt="">
+                            <div class="position-absolute bg-primary d-flex flex-column align-items-center justify-content-center rounded-circle"
+                                style="width: 60px; height: 60px; bottom: -30px; right: 30px;">
+                                <h4 class="font-weight-bold mb-n1">17</h4>
+                                <small class="text-white text-uppercase">Sep</small>
+                            </div>
+                        </div>
+                        <div class="bg-secondary mb-3" style="padding: 30px;">
+                            <div class="d-flex mb-3">
+                                <div class="d-flex align-items-center">
+                                    <img class="rounded-circle" style="width: 40px; height: 40px;" src="{% static 'img/user.jpg' %}" alt="">
+                                    <a class="text-muted ml-2" href="">Lovisha Darad</a>
+                                </div>
+                                <div class="d-flex align-items-center ml-4">
+                                    <i class="far fa-bookmark text-primary"></i>
+                                    <a class="text-muted ml-2" href="">Sensex</a>
+                                </div>
+                            </div>
+                            <h4 class="font-weight-bold mb-3">Stocks to watch: Bata India, Page Inds, NMDC, Apollo Hospitals, Oil India</h4>
+                            <p>After the markets notched four-month high in the last session, they are likely to open range-bound on Friday. As of 7:25 AM, the SGX Nifty Futures quoted 17,678 levels, up 19-odd points on the Nifty50.</p>
+                            <a class="border-bottom border-primary text-uppercase text-decoration-none" href="https://www.business-standard.com/article/markets/stocks-to-watch-today-bata-india-page-industries-nmdc-apollo-hospitals-oil-india-q1-results-122081200119_1.html">Read More <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="Page navigation">
+                          <ul class="pagination pagination-lg justify-content-center mb-0">
+                            <li class="page-item disabled">
+                              <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                              <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Grid End -->
+
+            <!-- Sidebar Start -->
+            <div class="col-lg-4 mt-5 mt-lg-0">
+                <!-- Search Form Start -->
+                <div class="mb-5">
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-0 p-4" placeholder="Keyword">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-primary border-primary text-white"><i
+                                        class="fa fa-search"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Search Form End -->
+
+                <!-- Category Start -->
+                <div class="mb-5">
+                    <h3 class="mb-4">Categories</h3>
+                    <div class="bg-secondary" style="padding: 30px;">
+                        <ul class="list-inline m-0">
+                            <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Stock market</a>
+                                <span class="badge badge-secondary badge-pill">150</span>
+                            </li>
+                            <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Nifty</a>
+                                <span class="badge badge-secondary badge-pill">131</span>
+                            </li>
+                            <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Sensex</a>
+                                <span class="badge badge-secondary badge-pill">78</span>
+                            </li>
+                            <li class="mb-1 py-2 px-3 bg-light d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Mutual Funds</a>
+                                <span class="badge badge-secondary badge-pill">56</span>
+                            </li>
+                            <li class="py-2 px-3 bg-light d-flex justify-content-between align-items-center">
+                                <a class="text-dark" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Real Estate</a>
+                                <span class="badge badge-secondary badge-pill">98</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Category End -->
+
+                <!-- Recent Post Start -->
+                <div class="mb-5">
+                    <h3 class="mb-4">Recent Post</h3>
+                    <div class="d-flex mb-3">
+                        <img class="img-fluid" src="{% static 'img/blog-1.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                        <a href="" class="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style="height: 80px;">
+                            Weekly Top Picks: These stocks scored 10 on 10 on Stock Reports Plus
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img class="img-fluid" src="{% static 'img/blog-2.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                        <a href="" class="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style="height: 80px;">
+                            Can Eicher Motors' non-automotive business cushion its margins?
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img class="img-fluid" src="{% static 'img/stock1.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                        <a href="" class="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style="height: 80px;">
+                            6 high-conviction stock ideas that can offer safe & steady returns
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img class="img-fluid" src="{% static 'img/stock3.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                        <a href="" class="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style="height: 80px;">
+                            Learn with ETMarkets: 4 mistakes which retail investors should avoid
+                        </a>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <img class="img-fluid" src="{% static 'img/stock5.jpg' %}" style="width: 80px; height: 80px; object-fit: cover;" alt="">
+                        <a href="" class="d-flex align-items-center bg-secondary text-dark text-decoration-none px-3" style="height: 80px;">
+                            Hot Stocks: Brokerages on IndusInd Bank, Tata Chemicals and InterGlobe Aviation
+                        </a>
+                    </div>
+                </div>
+                <!-- Recent Post End -->
+
+                <!-- Image Start -->
+                <div class="mb-5">
+                    <img src="{% static 'img/stock.png' %}" alt="" class="img-fluid">
+                </div>
+                <!-- Image End -->
+
+                <!-- Tags Start -->
+                <div class="mb-5">
+                    <h3 class="mb-4">Trending</h3>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-secondary m-1">Market</a>
+                        <a href="" class="btn btn-secondary m-1">News</a>
+                        <a href="" class="btn btn-secondary m-1">Oil India</a>
+                        <a href="" class="btn btn-secondary m-1">ONGC</a>
+                        <a href="" class="btn btn-secondary m-1">Marketing Trends</a>
+                        <a href="" class="btn btn-secondary m-1">Gold Price</a>
+                    </div>
+                </div>
+                <!-- Tags End -->
+
+                <!-- Image Start -->
+                <div class="mb-5">
+                    <img src="img/stock4.jpg" alt="" class="img-fluid">
+                </div>
+                <!-- Image End -->
+
+                <!-- Plain Text Start -->
+                <div>
+                    <h3 class="mb-4">Largest Stock Exchanges</h3>
+                    <div class="bg-secondary text-center" style="padding: 30px;">
+                        <p>The NYSE and Nasdaq are the two largest exchanges in the world, based on the total market capitalization of all the companies listed on the exchange. The number of U.S. stock exchanges registered with the Securities and Exchange Commission has reached nearly two dozen, though most of these are owned by either Cboe Global Markets, Nasdaq, or NYSE-owner Intercontinental Exchange.</p>
+                        <a href="" class="btn btn-primary py-2 px-4">Read More</a>
+                    </div>
+                </div>
+                <!-- Plain Text End -->
+            </div>
+            <!-- Sidebar End -->
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+{% endblock %}

@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+    <!-- Header Start -->
+    <div class="jumbotron jumbotron-fluid mb-5">
+        <div class="container text-center py-5">
+            <h1 class="text-white display-3">Service</h1>
+            <div class="d-inline-flex align-items-center text-white">
+                <p class="m-0"><a class="text-white" href="{% url 'home' %}">Home</a></p>
+                <i class="fa fa-circle px-3"></i>
+                <p class="m-0">Service</p>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Our Services</h6>
+                <h1 class="mb-4">Best Stock Services</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fa fa-2x fa-store text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Equity market</h6>
+                    </div>
+                    <p>Equity market, often called as stock market or share market, is a place where shares of companies or entities are traded.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.nirmalbang.com/knowledge-center/all-about-equity-market.html#:~:text=Equity%20market%2C%20often%20called%20as,counter%20or%20at%20stock%20exchanges.">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fad fa-2x fa-analytics text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Mutual Funds</h6>
+                    </div>
+                    <p>A mutual fund is a company that pools money from many investors and invests the money in securities such as stocks, bonds, and short-term debt.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-1#:~:text=What%20are%20mutual%20funds%3F,buy%20shares%20in%20mutual%20funds.">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fas fa-2x fa-dollar-sign text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Currency Derivatives</h6>
+                    </div>
+                    <p>Forex, being the worlds largest and the fastest growing industry in the fields of financial services, is now available at Suresh Rathi.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.indiamart.com/nice-investment/share-market-services.html#9907845697">Read More</a>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                        <i class="fas fa-2x fa-sack-dollar text-dark pr-3"></i>
+                        <h6 class="text-white font-weight-medium m-0">Commodity</h6>
+                    </div>
+                    <p>Commodities actually offer immense potential to become a separate asset class for market-savvy investors, arbitrageurs and speculators.</p>
+                    <a class="border-bottom text-decoration-none" href="https://www.indiamart.com/nice-investment/share-market-services.html#9907831588">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+
+    <!--  Quote Request Start -->
+    <div class="container-fluid bg-secondary my-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 py-5 py-lg-0">
+                    <h6 class="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
+                    <h1 class="mb-4">Request A Free Quote</h1>
+                    <p class="mb-4">If you have any queries regarding the content of this site, kindly contact us</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">225</h1>
+                            <h6 class="font-weight-bold mb-4">SKilled Experts</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">1050</h1>
+                            <h6 class="font-weight-bold mb-4">Happy Clients</h6>
+                        </div>
+                        <div class="col-sm-4">
+                            <h1 class="text-primary mb-2" data-toggle="counter-up">2500</h1>
+                            <h6 class="font-weight-bold mb-4">Complete Projects</h6>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Quote Request Start -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center pb-2">
+                <h6 class="text-primary text-uppercase font-weight-bold">Testimonial</h6>
+                <h1 class="mb-4">Our Clients Say</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Jim Rogers</h6>
+                            <small>- Journalist</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Bottoms in the investment world don't end with four-year lows; they end with 10- or 15-year lows.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Warren Buffett</h6>
+                            <small>- Philosopher</small>
+                        </div>
+                    </div>
+                    <p class="m-0">I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Carlos Slim Helu</h6>
+                            <small>- Entrepreneur</small>
+                        </div>
+                    </div>
+                    <p class="m-0">With a good perspective on history, we can have a better understanding of the past and present, and thus a clear vision of the future.</p>
+                </div>
+                <div class="position-relative bg-secondary p-4">
+                    <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 60px; height: 60px;" alt="">
+                        <div class="ml-3">
+                            <h6 class="font-weight-semi-bold m-0">Jeff Bezos</h6>
+                            <small>- Researcher</small>
+                        </div>
+                    </div>
+                    <p class="m-0">Given a 10% chance of a 100 times payoff, you should take that bet every time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+{% endblock %}

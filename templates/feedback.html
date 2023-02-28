@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>STOCK - Your Future lies with us</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="{% static 'img/favicon.ico' %}" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+123 456 7890</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>stock@market.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://twitter.com/i/flow/login">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://in.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="https://www.instagram.com/?hl=en">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="https://www.youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="{% url 'home' %}" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>Stock</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    
+                    
+                    <a href="{% url 'comp' %}" class="nav-item nav-link">Company</a>
+                    <div class="nav-item dropdown">
+                        
+                    </div>
+                    
+                    <a href="{% url 'prediction' %}" class="nav-item nav-link">Prediction</a>
+                    <a href="{% url 'feedback' %}" class="nav-item nav-link">Feedback</a>
+                    <a href="{% url 'viewfeedback' %}" class="nav-item nav-link">View Feedbacks</a> 
+
+                    <a href="{% url 'home' %}" class="nav-item nav-link">Logout</a>
+                </div>
+               
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    {% block content %} {% endblock %}
+
+
+
+   
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="{% static 'mail/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'mail/contact.js' %}"></script>
+
+   
+
+
+
+{% load static %}
+
+
+
+
+<section class="vh-100 bg-image"
+  style="background-image: url('https://images.unsplash.com/photo-1600263844743-ddf01c7a40ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80');">
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-uppercase text-center mb-5">Feedback</h2>
+              <div class="text-center text-danger">
+                {% if messages %}
+                    {%for msg in messages %}
+                      <b>{{msg}}</b>
+                    {% endfor %}
+                    {% endif %}
+              </div>
+              <br>
+              <form  method="POST">
+                {% csrf_token %}
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example1cg">Your Name</label>
+                  <input type="text" id="form3Example1cg" class="form-control form-control-lg" name="name" />
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3cg">Your Email</label>
+                  <input type="email" id="form3Example3cg" class="form-control form-control-lg" name="email" />
+                  
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example4cg">Message</label>
+                  <input type="message" id="form3Example4cg" class="form-control form-control-lg" name="message"/>
+                  
+                </div>
+
+                
+                
+
+                <div class="d-flex justify-content-center">
+                  <button type="submit"
+                    class="btn btn-warning btn-block btn-lg gradient-custom-4 text-body">Feedback</button>
+                </div>
+
+             
+
+              </form>
+              <br>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-7 col-md-6">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, Thrissur, India</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+123 456 67890</p>
+                    <p><i class="fa fa-envelope mr-2"></i>stock@market.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light btn-social mr-2" href="https://twitter.com/i/flow/login"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mr-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mr-2" href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="{% url 'about' %}"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="{% url 'service' %}"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                        <a class="text-white mb-2" href="{% url 'comp' %}"><i class="fa fa-angle-right mr-2"></i>Company</a>
+                        <a class="text-white" href="{% url 'contact' %}"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-6 mb-5">
+            <h3 class="text-primary mb-4">Newsletter</h3>
+            <p>If you want the latest news from our site, kindly register</p>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                    <div class="input-group-append">
+                        <a href="{% url 'register' %}" class="btn btn-primary py-3 px-4 d-none d-lg-block">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">&copy; <a href="#">Stock</a>. All Rights Reserved. 
+            
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center text-md-right">
+            <ul class="nav d-inline-flex">
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="#">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white py-0" href="{% url 'help' %}">Help</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+     <!-- Template Javascript -->
+     <script src="{% static 'js/main.js' %}"></script>
+    </body>
+    
+    </html>
